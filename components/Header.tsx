@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import React, { useState } from 'react'
 import { FiAlignJustify } from 'react-icons/fi'
 
@@ -10,8 +11,15 @@ export default function Header() {
   return (
     <div>
       <nav className="fixed top-0 left-0 right-0 py-6 px-8 flex items-center justify-between z-20 bg-gray-800">
-        <div className="text-white text-lg font-bold">
-          <h1>고양HUB</h1>
+        <div className="flex items-center space-x-2">
+          <Image
+            src="/images/icon.png"
+            className="w-10 h-10"
+            alt="아이콘"
+            width={300}
+            height={200}
+          />
+          <h1 className="text-white text-lg font-bold">고양HUB</h1>
         </div>
         <div className="hidden md:flex space-x-4">
           <Link
@@ -49,6 +57,9 @@ export default function Header() {
             </Link>
             <Link href="/object" className="hover:text-purple-400 transition">
               Object
+            </Link>
+            <Link href="/" className="hover:text-purple-400 transition">
+              Team
             </Link>
           </div>
         </div>

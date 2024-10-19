@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import {
   IoSearch,
   IoCreate,
@@ -9,16 +10,18 @@ import {
 export default function ProjectPage() {
   return (
     <div className="flex flex-col min-h-screen justify-center items-center">
-      {/* 이미지 섹션 */}
-      <div className="flex justify-center mb-8">
-        <img
+      <h1 className="text-2xl font-bold ">주제: 영화 커뮤니티</h1>
+      {/* 이미지 */}
+      <div className="flex justify-center mb-8 pt-3">
+        <Image
           src="/images/moviepage.png"
           alt="영화 기록장"
           className="w-full max-w-2xl rounded-lg shadow-lg"
+          width={300}
+          height={300}
         />
       </div>
 
-      {/* 주요 기능들 헤더 */}
       <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
         주요 기능들
       </h1>
@@ -29,7 +32,7 @@ export default function ProjectPage() {
           {
             icon: <IoSearch className="text-4xl text-blue-500" />,
             title: '영화 검색',
-            description: '영화를 장르별로 모아보고 검색할 수 있습니다',
+            description: '장르별로 모아보고 검색할 수 있습니다',
           },
           {
             icon: <IoCheckbox className="text-4xl text-green-500" />,
@@ -55,7 +58,7 @@ export default function ProjectPage() {
             <h2 className="text-xl font-semibold text-gray-800 mb-2">
               {title}
             </h2>
-            <p className="text-gray-600">{description}</p>
+            <p className="text-gray-600 pb-3">{description}</p>
           </div>
         ))}
       </div>
