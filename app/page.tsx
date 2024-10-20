@@ -1,6 +1,7 @@
 'use client'
 
 import teamMembers from '@/components/TeamDetail'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -8,10 +9,12 @@ export default function Home() {
       <h1 className="text-center font-bold text-3xl mb-8">고양 HUb?</h1>
       <div className="flex items-center mt-6 mb-8">
         <div className="mr-6">
-          <img
+          <Image
             src="/images/GoyangHub.png"
             alt="고양허브로고"
-            className="w-52 h-52 object-cover"
+            width={200}
+            height={200}
+            className="object-cover"
           />
         </div>
         <div>
@@ -48,10 +51,12 @@ export default function Home() {
             key={index}
             className="bg-neutral-300 p-6 rounded-lg text-center"
           >
-            <img
+            <Image
               src={member.image}
               alt={member.name}
-              className="w-24 h-24 mx-auto rounded-full mb-4"
+              width={100} // 적절한 너비로 설정
+              height={100} // 적절한 높이로 설정
+              className="mx-auto rounded-full mb-4"
             />
             <h2 className="text-lg font-bold mb-2">{member.name}</h2>
             <p className="mb-4">{member.description}</p>
