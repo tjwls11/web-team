@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     name: '정은미',
-    description: '팀원 소개페이지 제작',
+    description: '팀 소개페이지 제작',
     image: '/images/e.jpg',
     gitlink: 'https://github.com/Eunmi04',
     portfoliolink: '',

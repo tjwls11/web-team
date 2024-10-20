@@ -31,15 +31,6 @@ export default function ProjectPage() {
           height={400}
         />
       </div>
-      <p className="text-center text-base sm:text-lg md:text-xl lg:text-2xl p-4 leading-relaxed max-w-xl whitespace-normal font-serif text-gray-600 mb-8">
-        <span className="block font-mono font-bold sm:text-2xl text-gray-900 mb-2">
-          MOVIE NOTE란?
-        </span>
-        영화에 대해 이야기하고 정보를 공유하는 공간입니다. 각자의 독창적인 영화
-        감상을 기록할 수 있는 특별한 노트를 통해 여러분의 생각과 느낌을 나눌 수
-        있습니다. 영화를 사랑하는 모든 분들이 참여할 수 있으며, 다양한 장르와
-        테마에 대해 자유롭게 소통하고 서로의 의견을 존중하는 기회를 제공합니다.
-      </p>
 
       <Link href="/object">
         <button className="mt-4 bg-green-800 text-white py-3 px-8 rounded-full hover:bg-gradient-to-l hover:bg-blue-800 transition duration-300 ease-in-out shadow-md">

@@ -42,15 +42,11 @@ export default function Home() {
       </div>
 
       <hr className="my-8 border-gray-300" />
-      <h1 className="text-center text-4xl font-bold mb-8">고양hub</h1>
 
-      <h1 className="text-center text-2xl mb-6">팀원소개</h1>
+      <h1 className="text-center text-2xl mb-6 font-bold">팀원소개</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="bg-neutral-300 p-6 rounded-lg text-center"
-          >
+          <div key={index} className="bg-[#b5c8b8] p-6 rounded-lg text-center">
             <Image
               src={member.image}
               alt={member.name}
