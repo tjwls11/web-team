@@ -2,33 +2,38 @@ import React from 'react'
 
 export default function ObjectPage() {
   return (
-    <div className="flex flex-col min-h-screen w-full justify-center items-center bg-gray-100">
+    <div className="flex flex-col min-h-screen w-full justify-center items-center">
       {/* 사진 섹션 */}
       <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg mx-auto mb-6">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           <img
             src="https://yt3.googleusercontent.com/SXKyE4XgHJtX4qLS-9FKDuZt9EpBfeFPlGmNQdqsfxW2FDaKOjE53Mb20E43QuQfNDritLK1aw=s900-c-k-c0x00ffffff-no-rj"
-            alt="영화 이미지 1"
+            alt="넷플릭스"
             className="w-full h-auto object-cover rounded-lg"
           />
           <img
             src="https://play-lh.googleusercontent.com/vAkKvTtE8kdb0MWWxOVaqYVf0_suB-WMnfCR1MslBsGjhI49dAfF1IxcnhtpL3PnjVY"
-            alt="영화 이미지 2"
+            alt="왓챠"
             className="w-full h-auto object-cover rounded-lg"
           />
           <img
             src="https://www.tving.com/img/tving-favicon-160@3x.png"
-            alt="영화 이미지 3"
+            alt="티빙"
             className="w-full h-auto object-cover rounded-lg"
           />
           <img
             src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5CxR/image/9XcqgiDZg0gly7Infnam_qvHF-g"
-            alt="영화 이미지 4"
+            alt="디즈니플러스"
             className="w-full h-auto object-cover rounded-lg"
           />
           <img
             src="https://etcc.co.kr/wp-content/uploads/2023/07/20230726120108.png"
-            alt="영화 이미지 5"
+            alt="쿠팡플레이"
+            className="w-full h-auto object-cover rounded-lg"
+          />
+          <img
+            src="https://play-lh.googleusercontent.com/7cuI7bdCeZbmc9anRXqpmxZPH92t5NEEbhTnj5by6skhZK_dlUg9kx--gqtLf-8c2K12=w256"
+            alt="웨이브"
             className="w-full h-auto object-cover rounded-lg"
           />
         </div>

@@ -1,7 +1,7 @@
 'use client'
 
 import { useParams } from 'next/navigation'
-import teamMembers from '@/components/TeamDetail' // 데이터 가져오기
+import teamMembers from '@/components/TeamDetail'
 
 export default function TeamMemberPage() {
   const { name } = useParams()
@@ -38,6 +38,8 @@ export default function TeamMemberPage() {
         className="mb-4 w-64 h-64 object-cover rounded-full shadow-lg"
       />
       <p className="text-md text-center">{member.description}</p>
+
+      <button>포트폴리오</button>
     </div>
   )
 }
