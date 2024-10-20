@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function ObjectPage() {
   return (
@@ -6,35 +7,47 @@ export default function ObjectPage() {
       {/* 사진 섹션 */}
       <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg mx-auto mb-6">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-          <img
-            src="https://yt3.googleusercontent.com/SXKyE4XgHJtX4qLS-9FKDuZt9EpBfeFPlGmNQdqsfxW2FDaKOjE53Mb20E43QuQfNDritLK1aw=s900-c-k-c0x00ffffff-no-rj"
+          <Image
+            src="/images/Netflix.jpg"
             alt="넷플릭스"
-            className="w-full h-auto object-cover rounded-lg"
+            width={300}
+            height={200}
+            className="object-cover rounded-lg"
           />
-          <img
-            src="https://play-lh.googleusercontent.com/vAkKvTtE8kdb0MWWxOVaqYVf0_suB-WMnfCR1MslBsGjhI49dAfF1IxcnhtpL3PnjVY"
+          <Image
+            src="/images/watcha.png"
             alt="왓챠"
-            className="w-full h-auto object-cover rounded-lg"
+            width={300}
+            height={200}
+            className="object-cover rounded-lg"
           />
-          <img
-            src="https://www.tving.com/img/tving-favicon-160@3x.png"
+          <Image
+            src="/images/tving.png"
             alt="티빙"
-            className="w-full h-auto object-cover rounded-lg"
+            width={300}
+            height={200}
+            className="object-cover rounded-lg"
           />
-          <img
-            src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5CxR/image/9XcqgiDZg0gly7Infnam_qvHF-g"
+          <Image
+            src="/images/disnep.jpg"
             alt="디즈니플러스"
-            className="w-full h-auto object-cover rounded-lg"
+            width={300}
+            height={200}
+            className="object-cover rounded-lg"
           />
-          <img
-            src="https://etcc.co.kr/wp-content/uploads/2023/07/20230726120108.png"
+          <Image
+            src="/images/coupang.png"
             alt="쿠팡플레이"
-            className="w-full h-auto object-cover rounded-lg"
+            width={300}
+            height={200}
+            className="object-cover rounded-lg"
           />
-          <img
-            src="https://play-lh.googleusercontent.com/7cuI7bdCeZbmc9anRXqpmxZPH92t5NEEbhTnj5by6skhZK_dlUg9kx--gqtLf-8c2K12=w256"
+          <Image
+            src="/images/unnamed.png"
             alt="웨이브"
-            className="w-full h-auto object-cover rounded-lg"
+            width={300}
+            height={200}
+            className="object-cover rounded-lg"
           />
         </div>
       </div>
@@ -43,7 +56,7 @@ export default function ObjectPage() {
       <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg mx-auto">
         <h2 className="text-2xl font-semibold mb-4 text-gray-800">개발 목적</h2>
         <p className="text-lg text-gray-700 mb-4">
-          이 영화 소개 사이트는 OTT서비스의 활성화로 인해 언제 어디서든 다양한
+          이 영화 소개 사이트는 OTT 서비스의 활성화로 인해 언제 어디서든 다양한
           영화를 접하기 쉬워짐에 따라, 한 곳에서 쉽게 찾고, 장르별로 모아보며
           상세한 정보를 제공하는 것을 돕고자 합니다. 영화 팬들이 더욱 쉽게
           원하는 영화를 발견하고, 영화에 대한 자세한 설명, 감독 및 배우 정보를
