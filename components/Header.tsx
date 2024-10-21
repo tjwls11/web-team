@@ -10,18 +10,18 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="fixed top-0 left-0 right-0 py-6 px-8 flex items-center justify-between z-20 bg-[#172d26]">
-        <div className="flex items-center space-x-2">
+      <nav className="fixed top-0 left-0 right-0 py-6 px-8 flex items-center justify-between z-30 bg-[#172d26]">
+        <div className="flex items-center space-x-2 mr-auto">
           <Image
             src="/images/icon.png"
-            className="w-10 h-10"
+            className="w-10 h-10 "
             alt="아이콘"
             width={300}
             height={200}
           />
-          <h1 className="text-white text-lg font-bold">고양HUB</h1>
+          <h1 className="text-white font-extrabold text-2xl">고양Hub</h1>
         </div>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden lg:flex space-x-4">
           <Link
             href="/project"
             className="hover:text-blue-100 transition text-white"
@@ -38,7 +38,7 @@ export default function Header() {
             Team
           </Link>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
             <FiAlignJustify size={24} />
           </button>
@@ -46,15 +46,27 @@ export default function Header() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden bg-gray-800 text-white mt-16 z-10 fixed top-0 left-0 right-0">
-          <div className="flex flex-col space-y-4 p-4 text-lg font-bold">
-            <Link href="/project" className="hover:text-blue-100 transition">
+        <div className="lg:hidden bg-[#172d26] text-white mt-16 z-20 fixed top-0 left-0 right-0 ">
+          <div className="flex flex-col space-y-4 p-4 text-lg font-bold ml-5">
+            <Link
+              href="/project"
+              className="hover:text-blue-100 transition"
+              onClick={() => setMenuOpen(false)}
+            >
               Project
             </Link>
-            <Link href="/object" className="hover:text-blue-100 transition">
+            <Link
+              href="/object"
+              className="hover:text-blue-100 transition"
+              onClick={() => setMenuOpen(false)}
+            >
               Object
             </Link>
-            <Link href="/" className="hover:text-blue-100 transition">
+            <Link
+              href="/"
+              className="hover:text-blue-100 transition"
+              onClick={() => setMenuOpen(false)}
+            >
               Team
             </Link>
           </div>

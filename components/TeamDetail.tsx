@@ -11,7 +11,7 @@ const teamMembers = [
     description: '팀원소개페이지 제작',
     image: '/images/h.png',
     gitlink: 'https://github.com/hyejeong22',
-    portfoliolink: '',
+    portfoliolink: 'https://mmm-dusky.vercel.app/',
   },
   {
     name: '백서진',

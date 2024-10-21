@@ -1,0 +1,29 @@
+import React from 'react'
+
+export default function VideoPage() {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen p-16">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
+        MOVIE NOTE를 광고 동영상으로 제작하였습니다
+      </h1>
+
+      <div className="mb-12 w-full max-w-2xl px-4 border border-gray-300 rounded-lg shadow-md p-6">
+        <p className="text-lg text-gray-700 mb-4 text-center">
+          1. 재미있는 요소를 추가해 광고형식으로 제작하였습니다
+        </p>
+        <video controls className="w-full shadow-lg rounded-lg">
+          <source src="/images/movienote.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div className="w-full max-w-2xl px-4 border border-gray-300 rounded-lg shadow-md p-6">
+        <p className="text-lg text-gray-700 mb-4 text-center">
+          2. 공익광고형식으로 제작하였습니다
+        </p>
+        <video controls className="w-full shadow-lg rounded-lg">
+          <source src="/images/movienote1.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  )
+}
