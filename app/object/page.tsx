@@ -8,42 +8,42 @@ export default function ObjectPage() {
       <div className="w-full max-w-4xl bg-white p-10 rounded-lg shadow-lg mx-auto mb-12">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
           <Image
-            src="/images/Netflix.jpg"
+            src="/images/object/Netflix.jpg"
             alt="넷플릭스"
             width={300}
             height={200}
             className="object-cover rounded-lg"
           />
           <Image
-            src="/images/watcha.png"
+            src="/images/object/watcha.png"
             alt="왓챠"
             width={300}
             height={200}
             className="object-cover rounded-lg"
           />
           <Image
-            src="/images/tving.png"
+            src="/images/object/tving.png"
             alt="티빙"
             width={300}
             height={200}
             className="object-cover rounded-lg"
           />
           <Image
-            src="/images/disnep.jpg"
+            src="/images/object/disnep.jpg"
             alt="디즈니플러스"
             width={300}
             height={200}
             className="object-cover rounded-lg"
           />
           <Image
-            src="/images/coupang.png"
+            src="/images/object/coupang.png"
             alt="쿠팡플레이"
             width={300}
             height={200}
             className="object-cover rounded-lg"
           />
           <Image
-            src="/images/unnamed.png"
+            src="/images/object/unnamed.png"
             alt="웨이브"
             width={300}
             height={200}
