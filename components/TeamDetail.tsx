@@ -15,14 +15,14 @@ const teamMembers = [
   },
   {
     name: '백서진',
-    description: '팀장/ 기능소개페이지 제작',
+    description: '팀장/ 프로젝트페이지 제작',
     image: '/images/b.png',
     gitlink: 'https://github.com/tjwls11',
     portfoliolink: 'https://seojinportfolio.vercel.app/',
   },
   {
     name: '정은미',
-    description: '팀 소개페이지 제작',
+    description: '팀소개글 작성 / 동영상페이지 제작',
     image: '/images/e.jpg',
     gitlink: 'https://github.com/Eunmi04',
     portfoliolink: '',
