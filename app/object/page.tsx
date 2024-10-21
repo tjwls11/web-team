@@ -3,10 +3,10 @@ import Image from 'next/image'
 
 export default function ObjectPage() {
   return (
-    <div className="flex flex-col min-h-screen w-full justify-center items-center">
+    <div className="flex flex-col min-h-screen w-full justify-center items-center p-6">
       {/* 사진 섹션 */}
-      <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg mx-auto mb-6">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="w-full max-w-4xl bg-white p-10 rounded-lg shadow-lg mx-auto mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
           <Image
             src="/images/Netflix.jpg"
             alt="넷플릭스"
@@ -53,9 +53,9 @@ export default function ObjectPage() {
       </div>
 
       {/* 소개 섹션 */}
-      <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-lg mx-auto">
-        <h2 className="text-2xl font-semibold mb-4 text-gray-800">개발 목적</h2>
-        <p className="text-lg text-gray-700 mb-4">
+      <div className="w-full max-w-4xl bg-white p-10 rounded-lg shadow-lg mx-auto mb-12">
+        <h2 className="text-2xl font-semibold mb-6 text-gray-800">개발 목적</h2>
+        <p className="text-lg text-gray-700 mb-6">
           이 영화 소개 사이트는 OTT 서비스의 활성화로 인해 언제 어디서든 다양한
           영화를 접하기 쉬워짐에 따라, 한 곳에서 쉽게 찾고, 장르별로 모아보며
           상세한 정보를 제공하는 것을 돕고자 합니다. 영화 팬들이 더욱 쉽게
