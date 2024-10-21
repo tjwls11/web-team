@@ -24,17 +24,20 @@ export default function Header() {
         <div className="hidden lg:flex space-x-4">
           <Link
             href="/project"
-            className="hover:text-blue-100 transition text-white"
+            className="hover:text-green-500  transition text-white"
           >
             Project
           </Link>
           <Link
             href="/object"
-            className="hover:text-blue-100 transition text-white"
+            className="hover:text-green-500  transition text-white"
           >
             Object
           </Link>
-          <Link href="/" className="hover:text-blue-100 transition text-white">
+          <Link
+            href="/"
+            className="hover:text-green-500  transition text-white"
+          >
             Team
           </Link>
         </div>
@@ -50,21 +53,21 @@ export default function Header() {
           <div className="flex flex-col space-y-4 p-4 text-lg font-bold ml-5">
             <Link
               href="/project"
-              className="hover:text-blue-100 transition"
+              className="hover:text-green-500  transition"
               onClick={() => setMenuOpen(false)}
             >
               Project
             </Link>
             <Link
               href="/object"
-              className="hover:text-blue-100 transition"
+              className="hover:text-green-500  transition"
               onClick={() => setMenuOpen(false)}
             >
               Object
             </Link>
             <Link
               href="/"
-              className="hover:text-blue-100 transition"
+              className="hover:text-green-500 transition"
               onClick={() => setMenuOpen(false)}
             >
               Team

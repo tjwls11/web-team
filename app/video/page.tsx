@@ -14,6 +14,17 @@ export default function VideoPage() {
         <video controls className="w-full shadow-lg rounded-lg">
           <source src="/images/movienote.mp4" type="video/mp4" />
         </video>
+        <div className="flex justify-center mt-4">
+          <a
+            href="https://youtu.be/LJEtyvKiSeE?si=FieAty1eOZMpJEe_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="py-2 px-4 bg-green-800 text-white rounded-lg hover:bg-green-900">
+              YouTube로 놀러가기
+            </button>
+          </a>
+        </div>
       </div>
 
       <div className="w-full max-w-2xl px-4 border border-gray-300 rounded-lg shadow-md p-6">
@@ -23,6 +34,17 @@ export default function VideoPage() {
         <video controls className="w-full shadow-lg rounded-lg">
           <source src="/images/movienote1.mp4" type="video/mp4" />
         </video>
+        <div className="flex justify-center mt-4">
+          <a
+            href="https://youtu.be/DBbrNpLv0U0?si=K4WICjtGb-VnHipN"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="py-2 px-4 bg-green-800 text-white rounded-lg hover:bg-green-900">
+              YouTube로 놀러가기
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   )
